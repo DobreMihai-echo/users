@@ -105,17 +105,9 @@
 				<configuration>
 					<from>
 						<image>openjdk:11</image>
-						<auth>
-							<username>hiluminatul</username>
-							<password>Ghostblade123!</password>
-						</auth>
 					</from>
 					<to>
 						<image>registry.hub.docker.com/hiluminatul/user-service</image>
-						<auth>
-							<username>hiluminatul</username>
-							<password>Ghostblade123!</password>
-						</auth>
 						<tags>${project.version}</tags>
 					</to>
 				</configuration>
