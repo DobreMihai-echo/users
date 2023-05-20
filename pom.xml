@@ -107,7 +107,7 @@
 						<image>openjdk:11</image>
 					</from>
 					<to>
-						<image>registry.hub.docker.com/hiluminatul/user-service</image>
+						<image>${REPO_URL}/user-service</image>
 						<tags>${project.version}</tags>
 					</to>
 				</configuration>
