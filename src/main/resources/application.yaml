@@ -5,11 +5,3 @@ spring:
     name: USER-SERVICE
   config:
     import: configserver:${CONFIG_SERVER_URL:http://localhost:9000}
-  datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:5432/usersdb
-    username: postgres
-    password: Ghostblade123!
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
-    hibernate:
-      ddl-auto: update
