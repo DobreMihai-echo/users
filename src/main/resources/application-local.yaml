@@ -1,0 +1,43 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: USER-SERVICE
+  config:
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:9001}
+  datasource:
+    username: postgres
+    password: Ghostblade123!
+    url: jdbc:postgresql://localhost:5432/billodb
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      hbm2ddl:
+        auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+        format_sql: true
+    show-sql: true
+#  jpa:
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    platform: postgres
+#    url: jdbc:postgresql://postgres:5432/userdb
+#    username: postgresql
+#    password: password
+#    driverClassName: org.postgresql.Driver
+
+app:
+  jwtCookieName: myplanet
+  jwtSecret: myplanetsecret
+  jwtExpirationMs: 86400000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

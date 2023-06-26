@@ -25,12 +25,7 @@ spec:
             valueFrom:
               configMapKeyRef:
                 key: CONFIG_SERVER_URL
-                name: config-cm 
-          - name: DB_HOST
-            valueFrom:
-              configMapKeyRef:
-                key: hostname
-                name: postgresql-cm       
+                name: config-cm
 
 ---
 apiVersion: v1
