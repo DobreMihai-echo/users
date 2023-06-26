@@ -33,7 +33,6 @@ kind: Service
 metadata:
   name: user-service-svc
 spec:
-  type: LoadBalancer
   selector:
     app: user-service-app
   ports:
