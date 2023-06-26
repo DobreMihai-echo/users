@@ -16,3 +16,9 @@ spring:
     show-sql: true
   config:
     import: configserver:${CONFIG_SERVER_URL:http://localhost:9000}
+
+
+app:
+  jwtCookieName: myplanet
+  jwtSecret: myplanetsecret
+  jwtExpirationMs: 86400000
