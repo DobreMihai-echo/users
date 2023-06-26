@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/carbon-footprint")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:8085", maxAge = 3600, allowCredentials="true")
+@CrossOrigin(origins = "http://34.88.179.57", maxAge = 3600, allowCredentials="true")
 public class CarbonFootprintController {
 
     private final CarbonFootprintService service;

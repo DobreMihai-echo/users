@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:8085", maxAge = 3600, allowCredentials="true")
+@CrossOrigin(origins = "http://34.88.179.57", maxAge = 3600, allowCredentials="true")
 public class UserController {
 
     private final UserServiceImpl service;

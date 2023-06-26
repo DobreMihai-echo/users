@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/user-chalenge")
-@CrossOrigin(origins = "http://localhost:8085")
+@CrossOrigin(origins = "http://34.88.179.57")
 public class UserChallengeController {
 
     @Autowired
