@@ -104,7 +104,7 @@ public class AuthenticationController {
 
         Set<Role> roles = new HashSet<>();
         if (!roleRepository.existsByName(ERole.ROLE_USER)) {
-            roleRepository.save(new Role(ERole.ROLE_USER);
+            roleRepository.save(new Role(ERole.ROLE_USER));
         }
         Role userRole = roleRepository.findByName(ERole.ROLE_USER)
                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
