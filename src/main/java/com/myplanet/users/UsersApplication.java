@@ -10,6 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 public class UsersApplication {
 
 	public static void main(String[] args) {
+		System.out.println("LOOK HERE FOR THE ANSWER");
 		SpringApplication.run(UsersApplication.class, args);
 	}
 
