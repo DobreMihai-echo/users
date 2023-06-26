@@ -14,18 +14,19 @@ spec:
       containers:
       - name: user-service-app
         image: IMAGE_URL/user-service
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "300m"
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
         env:
           - name: CONFIG_SERVER_URL
             valueFrom:
               configMapKeyRef:
                 key: CONFIG_SERVER_URL
                 name: config-cm
+          - name: DB_HOST
+            valueFrom:
+              configMapKeyRef:
+                key: hostname
+                name: postgresql-cm
 
 ---
 apiVersion: v1
@@ -33,7 +34,6 @@ kind: Service
 metadata:
   name: user-service-svc
 spec:
-  type: LoadBalancer
   selector:
     app: user-service-app
   ports:

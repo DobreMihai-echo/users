@@ -5,8 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@SpringBootApplication()
-@EntityScan(basePackages = {"com.myplanet.users.entity"})
+@SpringBootApplication
 //@EnableFeignClients
 public class UsersApplication {
 
