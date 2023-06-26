@@ -1,6 +1,5 @@
 package com.myplanet.users.authentication;
 
-import com.ctc.wstx.util.StringUtil;
 import com.myplanet.users.entity.Role;
 import com.myplanet.users.entity.User;
 import com.myplanet.users.model.ERole;
